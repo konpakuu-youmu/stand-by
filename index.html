@@ -2,36 +2,59 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>域名暂未启用</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>转到新站点</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            font-size: 2.5em;
+        .main-text {
+            font-size: 48px;
             margin-bottom: 20px;
         }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
+        .sub-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .button {
+            font-size: 18px;
+            color: white;
+            background-color: #4183D7;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .button:hover {
+            background-color: #357ABD;
+        }
+        .button-white {
+            font-size: 18px;
+            color: black;
+            background-color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #4183D7;
+        }
+        .button-white:hover {
+            background-color: #f0f0f0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>域名暂未启用</h1>
-        <p>您好，尊敬的访问者，</p>
-        <p>您访问的域名目前尚未启用。我们正在努力准备内容，敬请期待！</p>
+    <div class="main-text">转到新站点</div>
+    <div class="sub-text">
+        mtr.pub站点正在被逐步弃用。<br>
+        已启用新域名：kmtr.work。
     </div>
+    <a href="https://kmtr.work" class="button">立刻跳转到新站点</a>
+    <a href="https://legacy.mtr.pub" class="button-white">访问原始博客（即将弃用）</a>
 </body>
 </html>
